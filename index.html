@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Steven Liang</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/paw.png" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/panda.png" alt="Steven Liang" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Steven Liang">Steven Liang</h1>
+
+          <p class="title">Student</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:wendi.liang@connect.polyu.hk" class="contact-link">wendi.liang@connect.polyu.hk</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birth</p>
+
+              <time datetime="2003-09-26">Sep 26,
+                <a href="https://www.google.com/maps/@22.5383216,113.8824606,14.39z?hl=en&entry=ttu" 
+                style="display: inline-block; width: auto; color: inherit; text-decoration: underline;"
+                target="_blank" rel="noopener noreferrer">
+                Shenzhen
+                </a>
+              </time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>
+                <a href="https://www.google.com/maps/@22.3056278,114.1604137,14.92z?hl=en&entry=ttu" 
+                style="color: inherit; text-decoration: underline;"
+                target="_blank" rel="noopener noreferrer">
+                Hung Hom, Kowloon, Hong Kong SAR
+              </address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+            <li class="social-item"> 
+                <a href="https://www.linkedin.com/in/steven-liang-44a027246/" 
+                class="social-link"
+                target="_blank" rel="noopener noreferrer"> 
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+              </li> 
+    
+              <li class="social-item"> 
+                <a href="https://instagram.com/crazy_wendy_" 
+                class="social-link"
+                target="_blank" rel="noopener noreferrer"> 
+                  <ion-icon name="logo-instagram"></ion-icon> 
+                </a> 
+              </li>
+    
+              <li class="social-item"> 
+                <a href="https://www.youtube.com/@Crazy_Wendy" 
+                class="social-link"
+                target="_blank" rel="noopener noreferrer"> 
+                  <ion-icon name="logo-youtube"></ion-icon> 
+                </a> 
+              </li>
+      
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link disabled>Project (coming soon!)</button> <!-- disabled -->
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I'm currently a junior Mechanical Engineering student at
+            <a href="https://www.polyu.edu.hk/" 
+            style="display: inline-block; width: auto; color:rgb(163,133,226); text-decoration:underline" 
+            target="_blank" rel="noopener noreferrer">
+            the Hong Kong Polytechnic University </a>, with a broad interest in the field of 
+            <a style="display: inline-block; width: auto; color:rgb(163,133,226); text-decoration:none">robotics </a>.
+            My curiosity particularly peaks at specialized branches such as 
+            <a style="display: inline-block; width: auto; color:rgb(163,133,226); text-decoration:none">surgical robotics </a>, 
+            <a style="display: inline-block; width: auto; color:rgb(163,133,226); text-decoration:none">bio-inspired robots </a>, and 
+            <a style="display: inline-block; width: auto; color:rgb(163,133,226); text-decoration:none">related areas </a>. 
+            I harbor a strong desire to delve into these areas of robotics, fueling my academic pursuits.
+            My aspiration is to make contributions towards utilizing robotics to benefit and ease human life, by means of thorough learning and exploration within these domains.
+          </p>
+
+          <p>
+            Outside my academic pursuits, I carry the same zest for curiosity into my personal life. 
+            My hobbies include cycling, swimming, hiking, musical theater, symphony music, photography, and cooking. 
+            I also serve as a proud member of the Hong Kong Polytechnic University Men's Epee Fencing Team.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/vr-glasses.png" alt="vr icon" width="50">
+              </div>
+               <!-- color of it is FEB850-->
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">VR & Robot Arm</h4>
+
+                <p class="service-item-text">
+                    Real-time control and inspection of the UR5 robotic arm using VR glasses.
+                    <span style="font-size: smaller;">(Update 20/07/2023)</span>
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/race-car.png" alt="car icon" width="50">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">CFD for Racing Cars</h4>
+
+                <p class="service-item-text">
+                    Computational Fluid Dynamics Analysis of Formula Racing Cars through the use of Ansys Analysis Software.
+                    <span style="font-size: smaller;">(Update 20/07/2023)</span>
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/robotic-surgery.png" alt="robot icon" width="50">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Mechanical Intern</h4>
+
+                <p class="service-item-text">
+                    Mechanical intern in the R&D department of an innovative surgical robotics unicorn company.
+                    <span style="font-size: smaller;">(Update 20/07/2023)</span>
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/innovation.png" alt="innovation icon" width="50">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Tech Starups</h4>
+
+                <p class="service-item-text">
+                    As a core engineer in two start-up projects on health and climate issues.
+                    <span style="font-size: smaller;">(Update 20/07/2023)</span>
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - funfacts
+        -->
+
+        <section class="funfacts">
+
+          <h3 class="h3 funfacts-title">Fun Facts</h3>
+
+          <ul class="funfacts-list has-scrollbar">
+
+            <li class="funfacts-item">
+              <div class="content-card" data-funfacts-item>
+
+                <figure class="funfacts-avatar-box">
+                  <img src="./assets/images/swim.png" alt="Swimming" width="50" data-funfacts-avatar>
+                </figure>
+
+                <h4 class="h4 funfacts-item-title" data-funfacts-title>“Marathon Mermaid”</h4>
+
+                <time data-funfacts-time datetime="2023-08-40" style="display: none;">40 Aug, 2023</time>
+
+                <div class="funfacts-text" data-funfacts-text>
+                  <p>
+                    During my summer vacation, I accomplished the equivalent of a marathon distance in swimming! 
+                    Almost every day was dedicated to swimming, and I truly felt like a fish in the water!
+                  </p>
+
+                  <p>
+                    [<a href="" 
+                    style="display: inline-block; font-size: larger;font-weight: bolder;width: auto; color:inherit; text-decoration:underline"
+                    target="_blank" rel="noopener noreferrer">Link</a>]
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="funfacts-item">
+                <div class="content-card" data-funfacts-item>
+  
+                  <figure class="funfacts-avatar-box">
+                    <img src="./assets/images/mountain.png" alt="Hiking" width="50" data-funfacts-avatar>
+                  </figure>
+  
+                  <h4 class="h4 funfacts-item-title" data-funfacts-title>“Unleashed Adventure”</h4>
+
+                  <time data-funfacts-time datetime="2023-01-01" style="display: none;">01 Jan, 2023</time>
+  
+                  <div class="funfacts-text" data-funfacts-text>
+                    <p>
+                        I once completed the arduous 100-kilometer 
+                        <a href="https://en.wikipedia.org/wiki/MacLehose_Trail" 
+                        style="display: inline-block; width: auto; color:inherit; text-decoration:underline"
+                        target="_blank" rel="noopener noreferrer">MacLehose Trail</a>, 
+                        within a span of just five days, with almost no equipment or provisions. 
+                        My sole objective during those days was to reach the bus stop before sunset!
+                    </p>
+
+                    <p>
+                        [<a href="" 
+                        style="display: inline-block; font-size: larger;font-weight: bolder;width: auto; color:inherit; text-decoration:underline"
+                        target="_blank" rel="noopener noreferrer">Link</a>]
+                    </p>
+
+                  </div>
+  
+                </div>
+            </li>
+
+            <li class="funfacts-item">
+                <div class="content-card" data-funfacts-item>
+  
+                  <figure class="funfacts-avatar-box">
+                    <img src="./assets/images/canvas.png" alt="Painting" width="50" data-funfacts-avatar>
+                  </figure>
+  
+                  <h4 class="h4 funfacts-item-title" data-funfacts-title>Mona Lisa's Feline Face</h4>
+  
+                  <time data-funfacts-time datetime="2023-08-15" style="display: none;">15 Aug, 2023</time>
+
+                  <div class="funfacts-text" data-funfacts-text>
+                    <p>
+                        I attempted to learn how to paint with oils, 
+                        and I chose the iconic Mona Lisa as my subject for practice. 
+                        However, in the end, I ended up with a Mona Lisa sporting a cat's face!
+                    </p>
+
+                    <p>
+                        [<a href="" 
+                        style="display: inline-block; font-size: larger;font-weight: bolder;width: auto; color:inherit; text-decoration:underline"
+                        target="_blank" rel="noopener noreferrer">Link</a>]
+                    </p>
+                    
+                  </div>
+  
+                </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - funfacts modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="funfacts-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/swim.png" alt="Swimming" width="80" data-modal-img>
+              </figure>
+              
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title></h4>
+
+              <time datetime="2023-08-30">30 Aug, 2023</time>
+
+              <div data-modal-text>
+                <p>
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume
+          <a href="" 
+          style="font-size: 1rem; color:inherit; text-decoration: underline;" 
+          target="_blank" rel="noopener noreferrer">Download PDF
+          </a>
+        </h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">
+                <a href="https://www.polyu.edu.hk/" 
+                style="display: inline-block; width: auto; color:inherit; text-decoration:underline"
+                target="_blank" rel="noopener noreferrer">
+                  the Hong Kong Polytechnic University
+                </a>
+              </h4>
+
+                <span>Sep, 2021 — Jul, 2025(Expected)</span>
+
+              <p class="timeline-text">BEng(Hons) Scheme in Mechanical Engineering</p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">
+                <a href="https://en.wikipedia.org/wiki/Shenzhen_Middle_School" 
+                style="display: inline-block; width: auto; color:inherit; text-decoration:underline"
+                target="_blank" rel="noopener noreferrer">
+                  Shenzhen Middle School
+                </a>
+              </h4>
+
+                <span>Sep, 2018 — Jul, 2021</span>
+
+              <p class="timeline-text">National College Entrance Examination</p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Research Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+                <h4 class="h4 timeline-item-title">
+                    <a href="https://henrychulab.github.io/index.html" 
+                    style="display: inline-block; width: auto; color:inherit; text-decoration:underline" 
+                    target="_blank" rel="noopener noreferrer">
+                      Biomimetic Robotics Laboratory
+                    </a>
+                  </h4>
+
+              <span>Sep, 2022 — Present</span>
+
+              <p class="timeline-text">Research Assistant</p>
+
+              <p class="timeline-text">
+                Supervised by <a href="https://www.polyu.edu.hk/en/me/people/academic-teaching-staff/chu-kar-hang-henry-dr/" 
+                style="display: inline-block; width: auto; color:inherit; text-decoration:underline" 
+                target="_blank" rel="noopener noreferrer"> 
+                  Dr Henry Kar Hang Chu</a>
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+                <h4 class="h4 timeline-item-title">
+                    <a href="https://www.romi-lab.org/" 
+                    style="display: inline-block; width: auto; color:inherit; text-decoration:underline" 
+                    target="_blank" rel="noopener noreferrer">
+                      robotics and mochine intellgence laboratory
+                    </a>
+                  </h4>
+
+              <span>Oct, 2021 — Aug, 2022</span>
+
+              <p class="timeline-text">Research Assistant</p>
+
+              <p class="timeline-text">
+                Supervised by <a href="https://www.polyu.edu.hk/en/me/people/academic-teaching-staff/david-navarro-alarcon-dr/" 
+                style="display: inline-block; width: auto; color:inherit; text-decoration:underline" 
+                target="_blank" rel="noopener noreferrer">
+                Dr David Navarro-Alarcon</a>
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+  
+              <h3 class="h3">Internship</h3>
+            </div>
+  
+            <ol class="timeline-list">
+  
+              <li class="timeline-item">
+  
+                <h4 class="h4 timeline-item-title">
+                    <a href="https://www.csrbtx.com/" 
+                    style="display: inline-block; width: auto; color:inherit; text-decoration:underline" 
+                    target="_blank" rel="noopener noreferrer">
+                    Cornerstone Robotics</a>
+                  </h4>
+  
+                <span>May, 2023 — Oct, 2023</span>
+  
+                <p class="timeline-text">Mechanical Intern</p>
+  
+              </li>
+  
+              <li class="timeline-item">
+  
+                <h4 class="h4 timeline-item-title">
+                    <a href="https://www.htsc.com.cn/en/" 
+                    style="display: inline-block; width: auto; color:inherit; text-decoration:underline" 
+                    target="_blank" rel="noopener noreferrer">
+                    Huatai Securities</a>
+                </h4>
+  
+                <span>May, 2022 — Jul, 2022</span>
+  
+                <p class="timeline-text">Financial Adviser Intern</p>
+  
+              </li>
+  
+            </ol>
+  
+          </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Programming Languages and Environments
+                <p style="font-size:smaller; color:inherit;">Python, Matlab, ROS (Robot Operating System)</p>
+            </h5>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Operating Systems
+                <p style="font-size:smaller; color:inherit;">Ubuntu</p>
+                </h5>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 60%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Hardware Programming and Microcontrollers
+                <p style="font-size:smaller; color:inherit;">Arduino</p>
+                </h5>
+
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">3D modelling simulation & virtual development
+                <p style="font-size:smaller; color:inherit;">Solidworks, Inventor, AutoCAD, PTC Creo, Ansys, Unity</p>
+                </h5>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PROJECT
+      -->
+      <article class="project" data-page="project">
+
+        <header>
+          <h2 class="h2 article-title">Project</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web design</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Applications</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web development</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web design</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Applications</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web development</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#"
+              target="_blank" rel="noopener noreferrer">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Finance</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
